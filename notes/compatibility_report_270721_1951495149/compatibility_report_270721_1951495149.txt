@@ -1,0 +1,44 @@
+Converting GML script: ${project_dir}/scripts/AddRowUnique/AddRowUnique.gml
+Converted description /// @description AddRowUnique()
+
+Converting GML script: ${project_dir}/scripts/UpTilesInGrid/UpTilesInGrid.gml
+Converted description /// @description UpTilesInGrid()
+
+Converting GML script: ${project_dir}/scripts/SwapTiles/SwapTiles.gml
+Converted description /// @description SwapTiles(leftTile)/// @param leftTile
+
+Converting GML script: ${project_dir}/scripts/SwapUp/SwapUp.gml
+Converted description /// @description SwapUp(tile)/// @param tile
+
+Converting GML script: ${project_dir}/scripts/CheckSwapMatches/CheckSwapMatches.gml
+Converted description /// @description CheckSwapMatches(TileToCheck)/// @param TileToCheck
+
+Converting GML script: ${project_dir}/scripts/FallColumn/FallColumn.gml
+Converted description /// @description FallColumn(column)/// @param column
+
+Converting GML script: ${project_dir}/scripts/AddFallColumn/AddFallColumn.gml
+Converted description /// @description AddFallColumn(column)/// @param column
+
+Font fnt_default has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/fnt_default/fnt_default.gms1.png
+Converting GML script: ${project_dir}/objects/obj_master/Create_0.gml
+Converted description /// @description Master object.
+
+Converting GML script: ${project_dir}/objects/obj_master/Step_0.gml
+Converted description /// @description Step event for master...
+
+Converting GML script: ${project_dir}/objects/obj_master/Draw_0.gml
+Converted description /// @description Master Draw
+
+Converting GML script: ${project_dir}/objects/obj_selector/Step_2.gml
+Converted description /// @description Selector end step, to set stuff...
+
+Converting GML script: ${project_dir}/objects/obj_selector/Step_0.gml
+Converted description /// @description Step event for selector...
+
+macOS icon ${options_dir}/mac/icons/icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Game speed set to 30
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script '__global_object_depths.gml'
