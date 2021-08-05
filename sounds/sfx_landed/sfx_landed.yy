@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.2,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 16,
   "sampleRate": 5512,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_Land.wav",
-  "duration": 0.1255,
+  "soundFile": "sfx_landed.ogg",
+  "duration": 0.197271,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_Land",
+  "name": "sfx_landed",
   "tags": [],
   "resourceType": "GMSound",
 }

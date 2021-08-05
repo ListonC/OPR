@@ -31,27 +31,27 @@ function PlaySound() {
 		break;
 		
 		case SFX.SWAP:
-			_track = sfx_Swap;
+			_track = sfx_Swiff;
 			_prio = 2;
 		break;
 		
 		case SFX.LAND:
-			_track = sfx_Land;
+			_track = sfx_landed;
 			_prio = 1;
 		break;
 		
 		case SFX.SOLVE:
-			_track = sfx_Solve;
+			_track = sfx_resolve;
 			_prio = 3;
 		break;
 		
 		case SFX.COMBO:
-			_track = sfx_ComboSolve;
+			_track = sfx_Combo;
 			_prio = 4;
 		break;
 		
 		case SFX.BREAK:
-			_track = sfx_BreakUp;
+			_track = sfx_landed;
 			_prio = 5;
 		break
 	}

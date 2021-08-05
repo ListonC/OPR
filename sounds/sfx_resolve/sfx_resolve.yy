@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.8,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 16,
   "sampleRate": 5512,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_Solve.ogg",
-  "duration": 0.538125,
+  "soundFile": "sfx_resolve.ogg",
+  "duration": 0.407833,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_Solve",
+  "name": "sfx_resolve",
   "tags": [],
   "resourceType": "GMSound",
 }

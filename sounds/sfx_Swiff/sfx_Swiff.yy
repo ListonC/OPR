@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_BreakUp.ogg",
-  "duration": 0.384542,
+  "soundFile": "sfx_Swiff.ogg",
+  "duration": 0.269062,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_BreakUp",
+  "name": "sfx_Swiff",
   "tags": [],
   "resourceType": "GMSound",
 }
