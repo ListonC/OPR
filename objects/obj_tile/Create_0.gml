@@ -12,4 +12,12 @@ isDying = false;
 
 AC = UpSwing;
 isHot = false;
+isNervous = false;
 counter = 0;
+Red = 0;
+Grn = 0;
+Blu = 0;
+Mod = 0;
+
+
+Audio = obj_audio;

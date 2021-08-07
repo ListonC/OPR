@@ -14,8 +14,26 @@ var _right = obj_master.grid[#curTile.xSlot +1, curTile.ySlot];
 _right.isHot = true;
 
 visible = false;
-if (curTile.type == "0") {
-	if (_right.type == "0") {
-		visible = true;	
+if (curTile.type == "0" and _right.type == "0") {
+	visible = true;
+	image_index = 0;
+	exit;
+}
+if (_right.type != "0") 
+{
+	visible = true;
+	image_index = 2;
+}
+
+if (curTile.type != "0")
+{
+	if (_right.type == "0")
+	{
+		visible = true;
+		image_index = 1;
 	}
+}
+
+if (curTile.type != "0" and _right.type != "0") {
+	visible = false;
 }

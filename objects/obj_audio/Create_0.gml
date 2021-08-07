@@ -55,6 +55,7 @@ function PlaySound() {
 			_prio = 5;
 		break
 	}
-	
-	audio_play_sound(_track, _prio, false);
+	if (!audio_is_playing(_track)) {
+		audio_play_sound(_track, _prio, false);
+	}
 }

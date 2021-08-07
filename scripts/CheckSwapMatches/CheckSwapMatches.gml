@@ -100,6 +100,7 @@ function CheckSwapMatches(argument0) {
 	        matchList[| p].matched = true;
 	        AddFallColumn(matchList[| p].xSlot);
 	    }
+	
 	}
 
 	ds_list_destroy(matchList);

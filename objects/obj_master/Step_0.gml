@@ -12,7 +12,8 @@ if(!instance_exists(obj_selector)){
 if(moving && ds_list_empty(fallList) && ds_list_empty(needChecks)){
     if(moveTimer == 0){
         with(obj_tile){
-            y -= 1;    
+            y -= 1;
+			playerCombo = 1;
         }
         yOffset -=1;
         if(yOffset == -32){
@@ -47,6 +48,7 @@ if(moving && ds_list_empty(fallList) && ds_list_empty(needChecks)){
             //All fallen, so we re-check all the need check tiles?
             if(!ds_list_empty(needChecks)){
                 playerCombo += 1;
+
 //                show_message("Checking " + string(ds_list_size(needChecks)) + " Changed tiles for matches");
                 for(var k = 0; k < ds_list_size(needChecks);k++){
                     CheckSwapMatches(needChecks[| k]);

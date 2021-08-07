@@ -15,6 +15,8 @@ needChecks = ds_list_create();
 playerScore = 0;
 playerCombo = 1;
 
+Audio = obj_audio;
+
 
 //Fill it..
 for(var i = 0; i < 6; i++){
@@ -24,7 +26,7 @@ for(var i = 0; i < 6; i++){
         b_tile.ySlot = j;
         grid[# i,j] = b_tile;
         b_tile.x = x + xOffset + (i * 32);
-        b_tile.y = y + (j * 32) + xOffset;
+        b_tile.y = y + (j * 32) + xOffset + 16;
         b_tile.type = "0";
     }
 }
