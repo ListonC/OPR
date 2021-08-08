@@ -6,16 +6,19 @@ if(grid[# 0, 12] == 0){
 if(!instance_exists(obj_selector)){
     var sel = instance_create(x,y,obj_selector);
     sel.curTile = grid[# 0,12];
-
+	sel.Grid = id;
 }
+
+if (!Push)
+	PushSpeed = 1;
 
 if(moving && ds_list_empty(fallList) && ds_list_empty(needChecks)){
     if(moveTimer == 0){
         with(obj_tile){
-            y -= 1;
+            y -= other.PushSpeed;
 			playerCombo = 1;
         }
-        yOffset -=1;
+        yOffset -= PushSpeed;
         if(yOffset == -32){
             UpTilesInGrid();
             yOffset = 0;

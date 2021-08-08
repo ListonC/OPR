@@ -13,6 +13,12 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_PtwoControl","path":"objects/obj_PtwoControl/obj_PtwoControl.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":704.0,"resourceVersion":"1.0","name":"inst_290DBC49","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":-300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"P2control","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"depth":-200,"assets":[
+        {"x":288.0,"y":712.0,"spriteId":{"name":"spr_P1control","path":"sprites/spr_P1control/spr_P1control.yy",},"ignore":false,"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"inheritItemSettings":false,"resourceVersion":"1.0","name":"graphic_1F6F39B7","tags":[],"resourceType":"GMRSpriteGraphic",},
+      ],"visible":true,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Controls","tags":[],"resourceType":"GMRAssetLayer",},
     {"tilesetId":{"name":"til_Mask","path":"tilesets/til_Mask/til_Mask.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":16,"SerialiseHeight":24,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -51,6 +57,7 @@
   "instanceCreationOrder": [
     {"name":"inst_70AD5D9C","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_6017CC3B","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"inst_290DBC49","path":"rooms/rm_test/rm_test.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
