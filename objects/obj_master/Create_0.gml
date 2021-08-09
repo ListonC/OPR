@@ -37,6 +37,7 @@ for(var i = 0; i < 6; i++){
         b_tile.x = x + xOffset + (i * 32);
         b_tile.y = y + (j * 32) + xOffset + 16;
         b_tile.type = "0";
+		b_tile.grid = id;
     }
 }
 
@@ -67,5 +68,5 @@ function UpdateControl(_player) {
 
 function PushUp() {
 	moveTimer = 0;
-	PushSpeed = 2;
+	//PushSpeed = 2;
 }

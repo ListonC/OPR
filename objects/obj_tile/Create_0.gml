@@ -4,7 +4,7 @@ xSlot = -4;
 image_index = 0;
 image_speed = 0;
 matched = false;
-//matchTime = 0;
+grid = noone;
 
 base = spr_BlockSlice;
 deathcount = 0;

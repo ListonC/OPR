@@ -68,31 +68,37 @@ function AddRowUnique() {
 	var newTile = instance_create(0,0,obj_tile);
 	newTile.type = slot1;
 	newTile.xSlot = 0;
+	newTile.grid = id;
 	ds_grid_set(grid,0,12,newTile);
 
 	var newTile = instance_create(0,0,obj_tile);
 	newTile.type = slot2;
 	newTile.xSlot = 1;
+	newTile.grid = id;
 	ds_grid_set(grid,1,12,newTile);
 
 	var newTile = instance_create(0,0,obj_tile);
 	newTile.type = slot3;
 	newTile.xSlot = 2;
+	newTile.grid = id;
 	ds_grid_set(grid,2,12,newTile);
 
 	var newTile = instance_create(0,0,obj_tile);
 	newTile.type = slot4;
 	newTile.xSlot = 3;
+	newTile.grid = id;
 	ds_grid_set(grid,3,12,newTile);
 
 	var newTile = instance_create(0,0,obj_tile);
 	newTile.type = slot5;
 	newTile.xSlot = 4;
+	newTile.grid = id;
 	ds_grid_set(grid,4,12,newTile);
 
 	var newTile = instance_create(0,0,obj_tile);
 	newTile.type = slot6;
 	newTile.xSlot = 5;
+	newTile.grid = id;
 	ds_grid_set(grid,5,12,newTile);
 
 

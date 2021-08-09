@@ -15,10 +15,12 @@ if (!Push)
 if(moving && ds_list_empty(fallList) && ds_list_empty(needChecks)){
     if(moveTimer == 0){
         with(obj_tile){
-            y -= other.PushSpeed;
-			playerCombo = 1;
+			if (grid == other.id) {
+	            y -= other.PushSpeed;
+				playerCombo = 1;
+			}
         }
-        yOffset -= PushSpeed;
+        yOffset -= 1;
         if(yOffset == -32){
             UpTilesInGrid();
             yOffset = 0;
