@@ -9,19 +9,17 @@ if(!instance_exists(obj_selector)){
 	sel.Grid = id;
 }
 
-if (!Push)
-	PushSpeed = 1;
 
 if(moving && ds_list_empty(fallList) && ds_list_empty(needChecks)){
     if(moveTimer == 0){
         with(obj_tile){
 			if (grid == other.id) {
-	            y -= other.PushSpeed;
+	            y -= other.PushSpeed + global.Difficulty;
 				playerCombo = 1;
 			}
         }
-        yOffset -= 1;
-        if(yOffset == -32){
+        yOffset -= PushSpeed + global.Difficulty;
+        if(yOffset <= -32){
             UpTilesInGrid();
             yOffset = 0;
         }
@@ -70,3 +68,8 @@ if(moving && ds_list_empty(fallList) && ds_list_empty(needChecks)){
     }
 }
 
+if (playerScore != drawscore)
+{
+	isScoring = true;
+	drawscore += 1;
+}

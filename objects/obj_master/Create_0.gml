@@ -13,8 +13,11 @@ fallList = ds_list_create();
 needChecks = ds_list_create();
 PushSpeed = 1;
 
+
 playerScore = 0;
 playerCombo = 1;
+drawscore = 0;
+isScoring = false;
 
 Audio = obj_audio;
 
@@ -68,5 +71,4 @@ function UpdateControl(_player) {
 
 function PushUp() {
 	moveTimer = 0;
-	//PushSpeed = 2;
 }
