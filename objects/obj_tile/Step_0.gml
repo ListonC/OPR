@@ -4,7 +4,7 @@ switch(type){
 		Red = 128;
 		Grn = 0;
 		Blu = 42;
-		Mod = 8;
+		Mod = 6;
 		visible = true;
     break;
     case "B":
@@ -12,7 +12,7 @@ switch(type){
 		Red = 22;
 		Grn = 89;
 		Blu = 128;
-		Mod = 8;
+		Mod = 6;
 		visible = true;
     break;
     case "C":
@@ -20,7 +20,7 @@ switch(type){
 		Red = 0;
 		Grn = 102;
 		Blu = 24;
-		Mod = 6;
+		Mod = 4;
 		visible = true;
     break;
     case "D":
@@ -28,7 +28,7 @@ switch(type){
 		Red = 128;
 		Grn = 117;
 		Blu = 20;
-		Mod = 6;
+		Mod = 4;
 		visible = true;
     break;
     case "E":
@@ -36,7 +36,7 @@ switch(type){
 		Red = 128;
 		Grn = 81;
 		Blu = 0;
-		Mod = 8;
+		Mod = 6;
 		visible = true;
     break;
     case "0":
@@ -52,7 +52,7 @@ deathcount += 1;
     if(deathcount == 14){
         type = "0";
         matched = false;
-        obj_master.playerScore = obj_master.playerScore + obj_master.playerCombo;
+        grid.playerScore = grid.playerScore + grid.playerCombo;
 		ds_list_add(Audio.playlist, SFX.SOLVE);
     }
 isDying = true;

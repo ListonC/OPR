@@ -8,7 +8,7 @@ _r = clamp(_r, 0,1);
 _g = clamp(_g, 0,1);
 _b = clamp(_b, 0,1);
 
-var y_height = obj_master.sprite_height - (ySlot * (abs(obj_master.yOffset)*Mod));
+var y_height = grid.sprite_height - (ySlot * (abs(grid.yOffset)*Mod));
 y_height = clamp(y_height, 0, 255);
 
 var _col = make_color_rgb(Red + (y_height * _r)div 2, 
@@ -32,14 +32,14 @@ if (isDying)
 }
 
 if (isHot) {
-	//var _scale = lerp(0, 6, counter) / 100 * -1;
+	var _scale = lerp(0, 3, counter) / 100 * -1;
 	draw_rectangle_color(x_off-16,y_off-16, x_off+15,y_off+15, _col, _col, _col, _col, false);
 	draw_sprite_ext(base, image_index, x_off, y_off, 1, 1, 0, c_white, 1);
-	draw_sprite_ext(sprite_index, image_index, x_off, y_off, 1, 1, 0, c_white, 1);
-	//depth = _scale * -1;
+	draw_sprite_ext(sprite_index, image_index, x_off, y_off, 1-_scale, 1-_scale, 0, c_white, 1);
+	depth = _scale * -1;
 } else {
 	draw_sprite(base, image_index, x_off, y_off);
 	draw_rectangle_color(x_off-16,y_off-16, x_off+15,y_off+15, _col, _col, _col, _col, false);
 	draw_self();
-	//depth = 0;
+	depth = 0;
 }

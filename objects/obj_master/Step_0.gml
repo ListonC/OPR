@@ -1,12 +1,13 @@
 /// @description Step event for master...
 
 if(grid[# 0, 12] == 0){
-    AddRowUnique();
+    AddRowUnique(id);
 }
-if(!instance_exists(obj_selector)){
-    var sel = instance_create(x,y,obj_selector);
-    sel.curTile = grid[# 0,12];
-	sel.Grid = id;
+if(!instance_exists(MySelector)){
+    MySelector = instance_create(x,y,obj_selector);
+	MySelector.Grid = id;
+    MySelector.curTile = MySelector.Grid.grid[# 0,12];
+	MySelector.myPlayer = Player;
 }
 
 
@@ -23,7 +24,7 @@ if(moving && ds_list_empty(fallList) && ds_list_empty(needChecks)){
             UpTilesInGrid();
             yOffset = 0;
         }
-    moveTimer = 2;
+    moveTimer = 4;
     }else{
         moveTimer -=1;
     }

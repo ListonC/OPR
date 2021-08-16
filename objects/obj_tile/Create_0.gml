@@ -5,12 +5,12 @@ image_index = 0;
 image_speed = 0;
 matched = false;
 grid = noone;
+player = 0;
 
 base = spr_BlockSlice;
 deathcount = 0;
 isDying = false;
 
-AC = UpSwing;
 isHot = false;
 isNervous = false;
 counter = 0;

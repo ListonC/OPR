@@ -4,7 +4,7 @@ function SwapTiles(argument0) {
 
 	//Get the 2 tiles.
 	var l_tile = argument0;
-	var r_tile = obj_master.grid[#l_tile.xSlot + 1, l_tile.ySlot];
+	var r_tile = Grid.grid[#l_tile.xSlot + 1, l_tile.ySlot];
 
 
 	//Set temps..
@@ -21,16 +21,16 @@ function SwapTiles(argument0) {
 
 	//Swap the grid positions..
 
-	obj_master.grid[# r_tile.xSlot,r_tile.ySlot] = r_tile;
-	obj_master.grid[# l_tile.xSlot,l_tile.ySlot] = l_tile;
+	Grid.grid[# r_tile.xSlot,r_tile.ySlot] = r_tile;
+	Grid.grid[# l_tile.xSlot,l_tile.ySlot] = l_tile;
 
 	//Do match logic...
 
 	CheckSwapMatches(r_tile);
 	CheckSwapMatches(l_tile);
 
-	AddFallColumn(r_tile.xSlot);
-	AddFallColumn(l_tile.xSlot);
+	AddFallColumn(r_tile.xSlot, Grid);
+	AddFallColumn(l_tile.xSlot, Grid);
 
 	curTile = r_tile;
 

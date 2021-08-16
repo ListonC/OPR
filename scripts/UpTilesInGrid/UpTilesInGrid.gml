@@ -4,13 +4,13 @@ function UpTilesInGrid() {
 	//Check the top row...
 	for(var ii = 0; ii < 6; ii++){
 	    if(grid[# ii,0].type == "0"){
-	        if(obj_selector.curTile == grid[# ii,0]){
-	            obj_selector.curTile = grid[# ii,1];
+	        if(MySelector.curTile == grid[# ii,0]){
+	            MySelector.curTile = grid[# ii,1];
 	        }
 	        instance_destroy(grid[# ii,0]);
 	        grid[# ii,0] = 0;
 	    }else{
-	        game_restart(); 
+	        room_restart(); 
 	    }
 	}
 

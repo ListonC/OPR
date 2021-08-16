@@ -12,7 +12,7 @@ leftSide = bbox_right;
 fallList = ds_list_create();
 needChecks = ds_list_create();
 PushSpeed = 1;
-
+MySelector = noone;
 
 playerScore = 0;
 playerCombo = 1;
@@ -41,6 +41,7 @@ for(var i = 0; i < 6; i++){
         b_tile.y = y + (j * 32) + xOffset + 16;
         b_tile.type = "0";
 		b_tile.grid = id;
+		b_tile.player = Player;
     }
 }
 

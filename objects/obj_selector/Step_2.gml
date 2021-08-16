@@ -7,10 +7,14 @@ y = curTile.y;
 My_X = curTile.xSlot;
 My_Y = curTile.ySlot;
 
-with (obj_tile) {isHot = false;}
+with (obj_tile) {
+	if (player == other.myPlayer) {
+		isHot = false;
+	}
+}
 
 curTile.isHot = true;
-var _right = obj_master.grid[#curTile.xSlot +1, curTile.ySlot];
+var _right = Grid.grid[#curTile.xSlot +1, curTile.ySlot];
 _right.isHot = true;
 
 visible = false;
